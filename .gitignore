@@ -1,0 +1,9 @@
+# Ignore Database and Cache
+*.db
+__pycache__/
+
+# Ignore Environment Variables (API Keys)
+.env
+
+# Ignore Massive Local Models
+local_flan_t5_small/

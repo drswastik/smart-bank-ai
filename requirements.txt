@@ -1,0 +1,8 @@
+streamlit
+pandas
+bcrypt
+ollama
+transformers
+torch
+google-genai
+python-dotenv
