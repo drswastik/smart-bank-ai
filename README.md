@@ -1,4 +1,3 @@
-```markdown
 # 🏦 Smart Bank: AI-Powered Core Banking Microservice
 
 Smart Bank is a dual-interface neo-banking system that combines standard financial operations with an autonomous AI action engine. Built with a focus on mathematical data security and zero-trust AI architecture, it bridges the gap between traditional banking ledgers and modern Large Language Models.
@@ -20,37 +19,29 @@ Smart Bank is a dual-interface neo-banking system that combines standard financi
 
 ## ⚙️ Installation & Setup
 
-1. Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone [https://github.com/drswastik/smart-bank-ai.git](https://github.com/drswastik/smart-bank-ai.git)
    cd smart-bank-ai
+   ```
 
-```
+2. **Install the core dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. Install the core dependencies:
-```bash
-pip install -r requirements.txt
+3. **Configure the environment variables:**
+   * Rename the `.env.example` file to `.env`.
+   * Open it and paste your Google Gemini API key.
 
-```
+4. **Stage the Local AI Router:**
+   * Download the `google/flan-t5-small` model files.
+   * Place them directly into a root folder named `local_flan_t5_small`.
 
-
-3. Configure the environment variables:
-* Rename the `.env.example` file to `.env`.
-* Open it and paste your Google Gemini API key.
-
-
-4. Stage the Local AI Router:
-* Download the `google/flan-t5-small` model files.
-* Place them directly into a root folder named `local_flan_t5_small`.
-
-
-5. Boot the application:
-```bash
-streamlit run app.py --server.fileWatcherType=none
-
-```
-
-
+5. **Boot the application:**
+   ```bash
+   streamlit run app.py --server.fileWatcherType=none
+   ```
 
 ## 🔐 Default Access
 
@@ -58,7 +49,3 @@ On the first boot, the system automatically initializes the cryptographic ledger
 
 * **National ID:** `ADMIN-001`
 * **Password:** `admin123`
-
-```
-
-```
