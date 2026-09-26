@@ -1,7 +1,7 @@
 """
 app.py
 The Streamlit frontend for Smart Bank. Integrates standard manual operations
-with the AI Action Engine and the restricted Admin God-Mode console.
+with the AI Action Engine and the restricted Admin Mode console.
 """
 
 import streamlit as st
