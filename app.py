@@ -86,7 +86,7 @@ else:
         # RBAC Navigation
         pages = ["💳 UI Terminal", "🤖 AI Copilot"]
         if st.session_state.role == "admin":
-            pages.append("🛡️ Admin God-Mode")
+            pages.append("🛡️ Admin Mode")
             
         page = st.radio("Navigation", pages)
         st.markdown("---")
@@ -144,7 +144,7 @@ else:
                 st.rerun()
 
     # VIEW 3: Restricted Admin Desk
-    elif page == "🛡️ Admin God-Mode":
+    elif page == "🛡️ Admin Mode":
         st.header("System Integrity & Underwriting Console")
         conn = get_db_connection()
         
