@@ -27,7 +27,7 @@ def system_boot():
 
 system_boot()
 
-st.set_page_config(page_title="IIT Smart Bank", page_icon="🏦", layout="wide")
+st.set_page_config(page_title="Smart Bank", page_icon="🏦", layout="wide")
 
 # Initialize Session State
 if "logged_in" not in st.session_state:
@@ -36,7 +36,7 @@ if "logged_in" not in st.session_state:
 
 # --- AUTHENTICATION & KYC SCREEN ---
 if not st.session_state.logged_in:
-    st.title("🏦 IIT Smart Bank Portal")
+    st.title("🏦 Smart Bank Portal")
     tab1, tab2 = st.tabs(["Login", "NLP Account Creation"])
     
     with tab1:
@@ -72,7 +72,7 @@ if not st.session_state.logged_in:
 # --- MAIN DASHBOARD ---
 else:
     with st.sidebar:
-        st.title("🏦 IIT Smart Bank")
+        st.title("🏦 Smart Bank")
         st.caption(f"Account ID: {st.session_state.account_id}")
         st.caption(f"Role: {st.session_state.role.upper()}")
         
